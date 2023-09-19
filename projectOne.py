@@ -214,10 +214,6 @@ if(addSprinkles == "yes" or addSprinkles == "y"): #if they say yes to sprinkles
       donutY = donutY+45
     
     sprinklesMade = 0 #resets sprinkles made count
-      
-#if they say no, skips the sprinkles
-else:
-  print("Alright, no sprinkles will be added.")
 
 #asks if user wants a box
 wantsBox = trtl.textinput("Box", "Would you like your donuts in a box?")
@@ -246,7 +242,7 @@ if(wantsBox == 'y' or wantsBox == 'yes'):
 
   #goes to center of the box and writes shop name
   trtl.penup()
-  trtl.goto((boxX + (boxLength/2)), (boxY - (boxWidth/2)))
+  trtl.goto((boxX + (boxLength/2)), (boxY - (boxWidth/2) - 20)) #writes the text in the center of the box
   trtl.pendown()
   trtl.write("Donut Shop", align="center", font=("Arial", int(donutsTotal*2), "normal"))
 
