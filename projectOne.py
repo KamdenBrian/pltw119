@@ -252,7 +252,4 @@ if(wantsBox == 'y' or wantsBox == 'yes'):
 
 tkinter.messagebox.showinfo(title="The End", message = "Thanks for making donuts with us!")
 
-#TODO: 
-#Change background donut colors
-
 wn.mainloop() #keeps screen showing
